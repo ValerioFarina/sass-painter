@@ -3,3 +3,9 @@
     display: table;
     clear: both;
 }
+
+@mixin flex($justify-content: flex-start, $align-items: stretch) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

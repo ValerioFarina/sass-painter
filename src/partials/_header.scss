@@ -1,0 +1,50 @@
+nav {
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+nav.top {
+    background-color: black;
+}
+
+#nav-top-options {
+    ul {
+        @include flex(flex-end, '');
+    }
+
+    li {
+        @include flex('', center);
+        padding: 10px 15px;
+        font-size: calc((100% * 2) / 3);
+        color: rgb(0, 156, 255);
+
+        a {
+            margin-left: 8px;
+            color: rgb(152, 152, 152);
+
+            &:hover {
+                color: rgb(255, 255, 255);
+                text-decoration: underline;
+            }
+        }
+
+        i {
+            font-size: calc((100% * 5) / 4);
+        }
+
+        option {
+            padding: 2px 0;
+        }
+    }
+}

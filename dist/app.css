@@ -386,11 +386,63 @@ body {
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .container:after {
   content: "";
   display: table;
   clear: both;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav.top {
+  background-color: black;
+}
+
+#nav-top-options ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: "";
+}
+
+#nav-top-options li {
+  display: flex;
+  justify-content: "";
+  align-items: center;
+  padding: 10px 15px;
+  font-size: calc((100% * 2) / 3);
+  color: #009cff;
+}
+
+#nav-top-options li a {
+  margin-left: 8px;
+  color: #989898;
+}
+
+#nav-top-options li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#nav-top-options li i {
+  font-size: calc((100% * 5) / 4);
+}
+
+#nav-top-options li option {
+  padding: 2px 0;
 }
 
