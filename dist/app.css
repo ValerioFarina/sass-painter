@@ -399,10 +399,6 @@ nav a {
   text-decoration: none;
 }
 
-nav li {
-  display: inline-block;
-}
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -444,5 +440,30 @@ nav.top {
 
 #nav-top-options li option {
   padding: 2px 0;
+}
+
+#nav-top-menu li {
+  display: inline-block;
+}
+
+#nav-top-menu li img {
+  max-width: 90px;
+}
+
+#nav-top-menu li a {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: calc((100% * 7) / 9);
+  color: white;
+}
+
+#nav-top-menu li a:not(.logo):hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#nav-top-menu li a i {
+  font-size: 9px;
+  color: #989898;
 }
 
