@@ -384,8 +384,17 @@ body {
   font-size: 18px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -395,28 +404,37 @@ body {
   clear: both;
 }
 
-nav a {
+.float-left {
+  float: left;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav a {
   text-decoration: none;
 }
 
-nav ul {
+header nav ul {
   margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
-nav.top {
-  background-color: black;
+header nav.top {
+  background-color: #101010;
 }
 
 #nav-top-options ul {
   display: flex;
+  flex-direction: "";
   justify-content: flex-end;
   align-items: "";
 }
 
 #nav-top-options li {
   display: flex;
+  flex-direction: "";
   justify-content: "";
   align-items: center;
   padding: 10px 15px;
@@ -465,5 +483,158 @@ nav.top {
 #nav-top-menu li a i {
   font-size: 9px;
   color: #989898;
+}
+
+#download-buy {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-position-x: 50%;
+}
+
+#download-buy .container {
+  display: flex;
+  flex-direction: "";
+  justify-content: space-between;
+  align-items: "";
+}
+
+#download-buy .name {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 11px;
+  color: #dddddd;
+}
+
+#download-buy .download {
+  flex-basis: 40%;
+  margin-top: 38px;
+  color: white;
+}
+
+#download-buy .download ul {
+  margin: 25px 0;
+}
+
+#download-buy .download ul li {
+  margin-bottom: 15px;
+}
+
+#download-buy .download ul li i {
+  margin: 0 5px;
+  font-size: calc((100% * 2) / 3);
+  color: gray;
+}
+
+#download-buy .download ul li span {
+  font-size: 16px;
+}
+
+#download-buy .download button {
+  display: flex;
+  flex-direction: "";
+  justify-content: "";
+  align-items: center;
+  padding: 10px 15px;
+  margin: 40px 0;
+  text-align: left;
+  background-color: #666666;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+#download-buy .download button:hover {
+  background-color: #525252;
+}
+
+#download-buy .download button .text {
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid white;
+}
+
+#download-buy .download button .text h5 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#download-buy .download button .text span {
+  font-size: 80%;
+}
+
+#download-buy .buy {
+  flex-basis: 30%;
+  margin-top: 20px;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#download-buy .buy .top {
+  display: flex;
+  flex-direction: "";
+  justify-content: space-between;
+  align-items: center;
+}
+
+#download-buy .buy .top h2 {
+  margin: 10px 0;
+  color: white;
+}
+
+#download-buy .buy .top h5 {
+  margin: 0;
+  color: #999;
+  text-transform: uppercase;
+}
+
+#download-buy .buy button {
+  margin: 10px 0 45px 0;
+  padding: 10px 40px;
+  font-size: 80%;
+  color: white;
+  background-color: #009cff;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+#download-buy .buy .offer {
+  padding: 15px;
+  background-color: white;
+}
+
+#download-buy .buy .offer a {
+  text-decoration: none;
+}
+
+#download-buy .buy .offer a:hover p:last-of-type {
+  text-decoration: underline;
+}
+
+#download-buy .buy .offer a h3 {
+  margin: 0;
+  font-size: 95%;
+  font-weight: 500;
+  color: #2c2c2c;
+  text-transform: uppercase;
+}
+
+#download-buy .buy .offer a p {
+  font-size: 75%;
+}
+
+#download-buy .buy .offer a p:first-of-type {
+  margin: 8px 0;
+  color: #333333;
+}
+
+#download-buy .buy .offer a p:last-of-type {
+  margin: 0;
+  color: #009cff;
 }
 

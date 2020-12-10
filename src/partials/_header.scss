@@ -1,26 +1,31 @@
-nav {
-    a {
-        text-decoration: none;
-    }
-
+header {
     ul {
-        margin: 0;
-        padding: 0;
         list-style-type: none;
+        padding: 0;
     }
-}
 
-nav.top {
-    background-color: black;
+    nav {
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        &.top {
+            background-color: #101010;
+        }
+    }
 }
 
 #nav-top-options {
     ul {
-        @include flex(flex-end, '');
+        @include flex('', flex-end, '');
     }
 
     li {
-        @include flex('', center);
+        @include flex('', '', center);
         padding: 10px 15px;
         font-size: calc((100% * 2) / 3);
         color: rgb(0, 156, 255);
@@ -67,6 +72,149 @@ nav.top {
             i {
                 font-size: $font-size / 2;
                 color: rgb(152, 152, 152);
+            }
+        }
+    }
+}
+
+#download-buy {
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+    background-position-x : 50%;
+
+    .container {
+        @include flex('', space-between, '');
+    }
+
+    .name {
+        flex-basis: 25%;
+        @include flex(column, flex-end, center);
+        margin-bottom: 15px;
+        font-size: 11px;
+        color: rgb(221, 221, 221);
+    }
+
+    .download {
+        flex-basis: 40%;
+        margin-top: 38px;
+        color: $brand-primary;
+
+        ul {
+            margin: 25px 0;
+
+            li {
+                margin-bottom: 15px;
+
+                i {
+                    margin: 0 5px;
+                    font-size: calc((100% * 2) / 3);
+                    color: rgb(128, 128, 128);
+                }
+
+                span {
+                    font-size: $font-size - 2;
+                }
+            }
+
+
+        }
+
+        button {
+            @include flex('', '', center);
+            padding: 10px 15px;
+            margin: 40px 0;
+            text-align: left;
+            background-color: rgb(102, 102, 102);
+            color: $brand-primary;
+            border: 0;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background-color: darken(rgb(102, 102, 102), 8%);
+            }
+
+            .text {
+                padding-right: 15px;
+                margin-right: 15px;
+                border-right: 1px solid $brand-primary;
+
+                h5 {
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    font-size: 80%;
+                }
+            }
+        }
+    }
+
+    .buy {
+        flex-basis: 30%;
+        margin-top: 20px;
+        padding: 30px 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+
+        .top {
+            @include flex('', space-between, center);
+
+            h2 {
+                margin: 10px 0;
+                color: $brand-primary;
+            }
+
+            h5 {
+                margin: 0;
+                color: #999;
+                text-transform: uppercase;
+            }
+        }
+
+        button {
+            margin: 10px 0 45px 0;
+            padding: 10px 40px;
+            font-size: 80%;
+            color: $brand-primary;
+            background-color: rgb(0, 156, 255);
+            text-transform: uppercase;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .offer {
+            padding: 15px;
+            background-color: $brand-primary;
+
+            a {
+                text-decoration: none;
+
+                &:hover p:last-of-type {
+                    text-decoration: underline;
+                }
+
+                h3 {
+                    margin: 0;
+                    font-size: 95%;
+                    font-weight: 500;
+                    color: rgb(44, 44, 44);
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 75%;
+
+                    &:first-of-type {
+                        margin: 8px 0;
+                        color: $brand-secondary;
+                    }
+
+                    &:last-of-type {
+                        margin: 0;
+                        color: rgb(0, 156, 255);
+                    }
+                }
             }
         }
     }
