@@ -384,3 +384,13 @@ body {
   font-size: 18px;
 }
 
+.container {
+  max-width: 1200px;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
