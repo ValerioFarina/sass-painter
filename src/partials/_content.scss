@@ -1,6 +1,6 @@
 #start-guide {
     background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
-    background-position: 50% 100%;
+    background-position-x: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -74,5 +74,16 @@
                 color: $brand-primary;
             }
         }
+    }
+}
+
+#artificial-intelligence {
+    padding: $top-spacing 0 $bottom-spacing 0;
+    color: $brand-secondary;
+
+    .section-description {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 }
