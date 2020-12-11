@@ -5,10 +5,10 @@
     background-size: cover;
     text-align: center;
     color: $brand-primary;
+    padding-bottom: 0;
 
     .container {
         max-width: 1000px;
-        padding-top: $top-spacing;
 
         p {
             padding: 0 20px;
@@ -78,7 +78,6 @@
 }
 
 #artificial-intelligence {
-    padding: $top-spacing 0 $bottom-spacing 0;
     color: $brand-secondary;
 
     .section-description {
@@ -148,4 +147,12 @@
             }
         }
     }
+}
+
+#bg-scroll-street {
+    @include bg-scroll('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg', 650px);
+}
+
+#bg-scroll-eye {
+    @include bg-scroll('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg', 650px);
 }
