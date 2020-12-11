@@ -1,3 +1,18 @@
+section {
+    padding: $top-spacing 0 $bottom-spacing 0;
+}
+
+.section-title,
+.section-description {
+    text-align: center;
+}
+
+.section-description {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 #start-guide {
     background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
     background-position-x: 50%;
@@ -146,6 +161,47 @@
 #painting-tools {
     background-color: rgb(34, 34, 34);
     color: $brand-primary;
+
+    .poster {
+        max-width: 770px;
+        margin: $top-spacing auto $top-spacing*2 auto;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .tool {
+        &:first-child {
+            margin-bottom: $top-spacing*2;
+        }
+
+        .description {
+            width: 44%;
+            margin-top: 100px;
+
+            &:first-child {
+                h2, p {
+                    margin-right: $top-spacing;
+                }
+            }
+
+            &:last-child {
+                h2, p {
+                    margin-left: $top-spacing;
+                }
+            }
+
+        }
+
+        .image {
+            width: 56%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 #bg-scroll-eye {

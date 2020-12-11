@@ -385,10 +385,6 @@ body {
   line-height: 30px;
 }
 
-section {
-  padding: 80px 0 60px 0;
-}
-
 h1,
 h2,
 h3,
@@ -424,17 +420,6 @@ a {
 
 .float-right {
   float: right;
-}
-
-.section-title,
-.section-description {
-  text-align: center;
-}
-
-.section-description {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 header nav ul {
@@ -790,6 +775,21 @@ nav.bottom ul li a:hover {
   color: white;
 }
 
+section {
+  padding: 80px 0 60px 0;
+}
+
+.section-title,
+.section-description {
+  text-align: center;
+}
+
+.section-description {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 #start-guide {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg");
   background-position-x: 50%;
@@ -952,6 +952,42 @@ nav.bottom ul li a:hover {
 #painting-tools {
   background-color: #222222;
   color: white;
+}
+
+#painting-tools .poster {
+  max-width: 770px;
+  margin: 80px auto 160px auto;
+}
+
+#painting-tools .poster img {
+  max-width: 100%;
+}
+
+#painting-tools .tool:first-child {
+  margin-bottom: 160px;
+}
+
+#painting-tools .tool .description {
+  width: 44%;
+  margin-top: 100px;
+}
+
+#painting-tools .tool .description:first-child h2,
+#painting-tools .tool .description:first-child p {
+  margin-right: 80px;
+}
+
+#painting-tools .tool .description:last-child h2,
+#painting-tools .tool .description:last-child p {
+  margin-left: 80px;
+}
+
+#painting-tools .tool .image {
+  width: 56%;
+}
+
+#painting-tools .tool .image img {
+  max-width: 100%;
 }
 
 #bg-scroll-eye {
