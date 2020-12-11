@@ -97,6 +97,11 @@ footer {
                     display: inline-block;
                     margin-right: 25px;
                     color: rgb(153, 153, 153);
+
+                    &:hover {
+                        color: $brand-primary;
+                        text-decoration: underline;
+                    }
                 }
 
                 p {
