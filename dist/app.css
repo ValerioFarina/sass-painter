@@ -882,23 +882,45 @@ footer {
 }
 
 #artificial-intelligence .carousel .images {
+  position: relative;
   flex-basis: 82%;
 }
 
 #artificial-intelligence .carousel .images .left-img,
 #artificial-intelligence .carousel .images .right-img {
   position: relative;
-  width: 50%;
+  width: calc(50% - 2px);
   overflow: hidden;
 }
 
 #artificial-intelligence .carousel .images .left-img img,
 #artificial-intelligence .carousel .images .right-img img {
+  display: block;
   width: 200%;
+}
+
+#artificial-intelligence .carousel .images .left-img {
+  border-right: 2px solid #333333;
+}
+
+#artificial-intelligence .carousel .images .right-img {
+  border-left: 2px solid #333333;
 }
 
 #artificial-intelligence .carousel .images .right-img img {
   transform: translateX(-50%);
+}
+
+#artificial-intelligence .carousel .images .left-right-arrow {
+  display: block;
+  padding: 5px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333333;
+  color: white;
+  cursor: pointer;
 }
 
 #artificial-intelligence .carousel .prev,

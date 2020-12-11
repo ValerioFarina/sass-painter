@@ -92,23 +92,43 @@
         margin-top: 80px;
 
         .images {
+            position: relative;
             flex-basis: 82%;
 
             .left-img,
             .right-img {
                 position: relative;
-                width: 50%;
+                width: calc(50% - 2px);
                 overflow: hidden;
 
                 img {
+                    display: block;
                     width: 200%;
                 }
             }
 
+            .left-img {
+                border-right: 2px solid $brand-secondary;
+            }
+
             .right-img {
+                border-left: 2px solid $brand-secondary;
+
                 img {
                     transform: translateX(-50%);
                 }
+            }
+
+            .left-right-arrow {
+                display: block;
+                padding: 5px 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $brand-secondary;
+                color: $brand-primary;
+                cursor: pointer;
             }
         }
 
