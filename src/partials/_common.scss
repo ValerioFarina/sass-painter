@@ -17,7 +17,7 @@ a {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 
     &:after {
@@ -27,4 +27,8 @@ a {
 
 .float-left {
     float: left;
+}
+
+.float-right {
+    float: right;
 }
