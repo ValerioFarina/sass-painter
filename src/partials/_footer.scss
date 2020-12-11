@@ -29,7 +29,6 @@ footer {
     }
 }
 
-
 #footer-icons {
     width: calc(100% / 4);
 
@@ -72,6 +71,38 @@ footer {
                 width: 100%;
                 height: 100%;
                 fill: $brand-primary;
+            }
+        }
+    }
+}
+
+#footer-bottom {
+    padding: 10px 0 20px 0;
+    background-color: rgb(30, 30, 30);
+
+    .container {
+        @include flex('', space-between, center);
+
+        .images {
+            img {
+                margin: 10px;
+            }
+        }
+
+        ul {
+            li {
+                font-size: calc((100% * 2) / 3);
+
+                a {
+                    display: inline-block;
+                    margin-right: 25px;
+                    color: rgb(153, 153, 153);
+                }
+
+                p {
+                    margin: 0;
+                    color: $brand-primary;
+                }
             }
         }
     }

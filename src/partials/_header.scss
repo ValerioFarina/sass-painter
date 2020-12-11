@@ -219,9 +219,6 @@ nav.bottom {
     background-color: rgb(230, 230, 230);
 
     ul {
-        &:after {
-            @include clearfix;
-        }
         li {
             a {
                 display: inline-block;

@@ -19,10 +19,10 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
 
-    &:after {
-        @include clearfix;
-    }
+.clearfix:after {
+    @include clearfix;
 }
 
 .float-left {
