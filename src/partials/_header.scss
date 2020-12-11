@@ -72,7 +72,7 @@ header {
     background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x : 45%;
+    background-position-x : 50%;
 
     .container {
         @include flex('', space-between, '');

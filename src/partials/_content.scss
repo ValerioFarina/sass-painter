@@ -1,5 +1,9 @@
 section {
     padding: $top-spacing 0 $bottom-spacing 0;
+
+    p {
+        line-height: $line-spacing;
+    }
 }
 
 .section-title,

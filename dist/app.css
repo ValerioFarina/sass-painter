@@ -382,7 +382,6 @@ template {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  line-height: 30px;
 }
 
 h1,
@@ -494,7 +493,7 @@ header nav.top {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 45%;
+  background-position-x: 50%;
 }
 
 #download-buy .container {
@@ -777,6 +776,10 @@ nav.bottom ul li a:hover {
 
 section {
   padding: 80px 0 60px 0;
+}
+
+section p {
+  line-height: 30px;
 }
 
 .section-title,
