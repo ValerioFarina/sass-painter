@@ -431,6 +431,12 @@ a {
   text-align: center;
 }
 
+.section-description {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 header nav ul {
   margin: 0;
 }
@@ -798,10 +804,6 @@ nav.bottom ul li a:hover {
   max-width: 1000px;
 }
 
-#start-guide .container p {
-  padding: 0 20px;
-}
-
 #start-guide .container a {
   display: block;
   padding: 10px;
@@ -865,12 +867,6 @@ nav.bottom ul li a:hover {
 
 #artificial-intelligence {
   color: #333333;
-}
-
-#artificial-intelligence .section-description {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 #artificial-intelligence .carousel {
@@ -951,6 +947,11 @@ nav.bottom ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#painting-tools {
+  background-color: #222222;
+  color: white;
 }
 
 #bg-scroll-eye {

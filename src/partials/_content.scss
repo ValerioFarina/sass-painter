@@ -10,10 +10,6 @@
     .container {
         max-width: 1000px;
 
-        p {
-            padding: 0 20px;
-        }
-
         a {
             display: block;
             padding: 10px;
@@ -80,12 +76,6 @@
 #artificial-intelligence {
     color: $brand-secondary;
 
-    .section-description {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
     .carousel {
         @include flex('', '', '');
         margin-top: 80px;
@@ -151,6 +141,11 @@
 
 #bg-scroll-street {
     @include bg-scroll('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg', 650px);
+}
+
+#painting-tools {
+    background-color: rgb(34, 34, 34);
+    color: $brand-primary;
 }
 
 #bg-scroll-eye {
