@@ -874,22 +874,51 @@ footer {
 }
 
 #artificial-intelligence .carousel {
+  display: flex;
+  flex-direction: "";
+  justify-content: "";
+  align-items: "";
   margin-top: 80px;
 }
 
-#artificial-intelligence .carousel .left-img,
-#artificial-intelligence .carousel .right-img {
+#artificial-intelligence .carousel .images {
+  flex-basis: 82%;
+}
+
+#artificial-intelligence .carousel .images .left-img,
+#artificial-intelligence .carousel .images .right-img {
   position: relative;
   width: 50%;
   overflow: hidden;
 }
 
-#artificial-intelligence .carousel .left-img img,
-#artificial-intelligence .carousel .right-img img {
+#artificial-intelligence .carousel .images .left-img img,
+#artificial-intelligence .carousel .images .right-img img {
   width: 200%;
 }
 
-#artificial-intelligence .carousel .right-img img {
+#artificial-intelligence .carousel .images .right-img img {
   transform: translateX(-50%);
+}
+
+#artificial-intelligence .carousel .prev,
+#artificial-intelligence .carousel .next {
+  display: flex;
+  flex-direction: "";
+  justify-content: center;
+  align-items: center;
+  flex-basis: 9%;
+  font-size: 30px;
+  color: #ff4700;
+}
+
+#artificial-intelligence .carousel .prev i,
+#artificial-intelligence .carousel .next i {
+  cursor: pointer;
+}
+
+#artificial-intelligence .carousel .prev i:hover,
+#artificial-intelligence .carousel .next i:hover {
+  color: #ffb599;
 }
 
