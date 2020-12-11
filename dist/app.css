@@ -393,6 +393,15 @@ h6 {
   font-weight: 400;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -406,15 +415,6 @@ h6 {
 
 .float-left {
   float: left;
-}
-
-header ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-header nav a {
-  text-decoration: none;
 }
 
 header nav ul {
@@ -661,5 +661,13 @@ nav.bottom ul li a {
 
 nav.bottom ul li a:hover {
   background-color: #eeeeee;
+}
+
+#footer-menus {
+  padding: 40px 0 30px 0;
+}
+
+#footer-menus .footer-menu {
+  width: calc(100% / 4);
 }
 

@@ -1,0 +1,7 @@
+#footer-menus {
+    padding: $top-spacing/2 0 $bottom-spacing/2 0;
+
+    .footer-menu {
+        width: calc(100% / 4);
+    }
+}
