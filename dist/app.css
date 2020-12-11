@@ -873,3 +873,23 @@ footer {
   padding: 0 20px;
 }
 
+#artificial-intelligence .carousel {
+  margin-top: 80px;
+}
+
+#artificial-intelligence .carousel .left-img,
+#artificial-intelligence .carousel .right-img {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+#artificial-intelligence .carousel .left-img img,
+#artificial-intelligence .carousel .right-img img {
+  width: 200%;
+}
+
+#artificial-intelligence .carousel .right-img img {
+  transform: translateX(-50%);
+}
+

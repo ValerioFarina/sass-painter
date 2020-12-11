@@ -86,4 +86,25 @@
         margin: 0 auto;
         padding: 0 20px;
     }
+
+    .carousel {
+        margin-top: 80px;
+
+        .left-img,
+        .right-img {
+            position: relative;
+            width: 50%;
+            overflow: hidden;
+
+            img {
+                width: 200%;
+            }
+        }
+
+        .right-img {
+            img {
+                transform: translateX(-50%);
+            }
+        }
+    }
 }
