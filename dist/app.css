@@ -963,23 +963,19 @@ section {
   max-width: 100%;
 }
 
+#painting-tools .tool {
+  display: flex;
+  flex-direction: "";
+  justify-content: space-between;
+  align-items: center;
+}
+
 #painting-tools .tool:first-child {
   margin-bottom: 160px;
 }
 
 #painting-tools .tool .description {
-  width: 44%;
-  margin-top: 100px;
-}
-
-#painting-tools .tool .description:first-child h2,
-#painting-tools .tool .description:first-child p {
-  margin-right: 80px;
-}
-
-#painting-tools .tool .description:last-child h2,
-#painting-tools .tool .description:last-child p {
-  margin-left: 80px;
+  width: 34%;
 }
 
 #painting-tools .tool .image {

@@ -172,26 +172,14 @@ section {
     }
 
     .tool {
+        @include flex('', space-between, center);
+
         &:first-child {
             margin-bottom: $top-spacing*2;
         }
 
         .description {
-            width: 44%;
-            margin-top: 100px;
-
-            &:first-child {
-                h2, p {
-                    margin-right: $top-spacing;
-                }
-            }
-
-            &:last-child {
-                h2, p {
-                    margin-left: $top-spacing;
-                }
-            }
-
+            width: 34%;
         }
 
         .image {
