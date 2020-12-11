@@ -181,6 +181,10 @@ header {
             outline: none;
             border: 0;
             cursor: pointer;
+
+            &:hover {
+                background-color: lighten(rgb(0, 156, 255), 8%);
+            }
         }
 
         .offer {
@@ -214,6 +218,28 @@ header {
                         margin: 0;
                         color: rgb(0, 156, 255);
                     }
+                }
+            }
+        }
+    }
+}
+
+nav.bottom {
+    background-color: rgb(230, 230, 230);
+
+    ul {
+        &:after {
+            @include clearfix;
+        }
+        li {
+            a {
+                display: inline-block;
+                padding: 18px 25px;
+                color: rgb(85, 85, 85);
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: rgb(238, 238, 238);
                 }
             }
         }

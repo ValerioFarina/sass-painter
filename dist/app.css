@@ -603,6 +603,10 @@ header nav.top {
   cursor: pointer;
 }
 
+#download-buy .buy button:hover {
+  background-color: #29acff;
+}
+
 #download-buy .buy .offer {
   padding: 15px;
   background-color: white;
@@ -636,5 +640,26 @@ header nav.top {
 #download-buy .buy .offer a p:last-of-type {
   margin: 0;
   color: #009cff;
+}
+
+nav.bottom {
+  background-color: #e6e6e6;
+}
+
+nav.bottom ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav.bottom ul li a {
+  display: inline-block;
+  padding: 18px 25px;
+  color: #555555;
+  text-transform: uppercase;
+}
+
+nav.bottom ul li a:hover {
+  background-color: #eeeeee;
 }
 
