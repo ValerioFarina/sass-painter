@@ -663,11 +663,34 @@ nav.bottom ul li a:hover {
   background-color: #eeeeee;
 }
 
+footer {
+  background-color: #ececec;
+}
+
 #footer-menus {
   padding: 40px 0 30px 0;
 }
 
 #footer-menus .footer-menu {
   width: calc(100% / 4);
+}
+
+#footer-menus .footer-menu h5 {
+  margin: 20px 0 10px 0;
+}
+
+#footer-menus .footer-menu ul {
+  margin: 0 0 10px 0;
+  line-height: 22px;
+}
+
+#footer-menus .footer-menu ul a {
+  font-size: calc((100% * 2) / 3);
+  color: #4d4d4d;
+}
+
+#footer-menus .footer-menu ul a:hover {
+  color: #333333;
+  text-decoration: underline;
 }
 
