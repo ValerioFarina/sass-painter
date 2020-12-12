@@ -69,9 +69,7 @@ section {
 
             img:last-of-type {
                 width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
+                @include pos-absolute-top-left;
             }
 
             span {
@@ -81,10 +79,7 @@ section {
                 line-height: 100px;
                 border-radius: 50%;
                 border: 2px solid $brand-primary;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                @include pos-absolute-top-left(50%, 50%, -50%, -50%);
                 font-size: 60px;
                 color: $brand-primary;
             }
@@ -102,6 +97,16 @@ section {
         .images {
             position: relative;
             flex-basis: 82%;
+
+            &::after {
+                content: "Before";
+                display: inline-block;
+                @include pos-absolute-bottom-right;
+                padding: 5px 12px;
+                font-size: ($font-size*4) / 5;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: $brand-primary;
+            }
 
             .left-img,
             .right-img {
@@ -130,10 +135,7 @@ section {
             .left-right-arrow {
                 display: block;
                 padding: 5px 20px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                @include pos-absolute-top-left(50%, 50%, -50%, -50%);
                 background-color: $brand-secondary;
                 color: $brand-primary;
                 cursor: pointer;
@@ -224,10 +226,7 @@ section {
             }
 
             h3 {
-                position: absolute;
-                bottom: 10px;
-                left: 50%;
-                transform: translateX(-50%);
+                @include pos-absolute-bottom-left(10px, 50%, -50%);
             }
         }
     }

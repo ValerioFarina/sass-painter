@@ -21,3 +21,24 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@mixin pos-absolute-top-left($top:0, $left:0, $translateX:0%, $translateY:0%) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate($translateX, $translateY);
+}
+
+@mixin pos-absolute-bottom-right($bottom:0, $right:0, $translateX:0%, $translateY:0%) {
+    position: absolute;
+    bottom: $bottom;
+    right: $right;
+    transform: translate($translateX, $translateY);
+}
+
+@mixin pos-absolute-bottom-left($bottom:0, $left:0, $translateX:0%, $translateY:0%) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+    transform: translate($translateX, $translateY);
+}

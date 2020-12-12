@@ -741,6 +741,7 @@ section p {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translate(0%, 0%);
 }
 #start-guide .container .images span {
   display: block;
@@ -770,6 +771,18 @@ section p {
 #artificial-intelligence .carousel .images {
   position: relative;
   flex-basis: 82%;
+}
+#artificial-intelligence .carousel .images::after {
+  content: "Before";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0%, 0%);
+  padding: 5px 12px;
+  font-size: 14.4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 #artificial-intelligence .carousel .images .left-img,
 #artificial-intelligence .carousel .images .right-img {
@@ -897,7 +910,7 @@ section p {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0%);
 }
 
 #services {
