@@ -18,10 +18,7 @@ section {
 }
 
 #start-guide {
-    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
-    background-position-x: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bg-img($bg-img-start-guide, 50%);
     text-align: center;
     color: $brand-primary;
     padding-bottom: 0;
@@ -161,7 +158,7 @@ section {
 }
 
 #bg-scroll-street {
-    @include bg-scroll('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg', 650px);
+    @include bg-scroll($bg-img-street, center, 100%, 510px);
 }
 
 #painting-tools {
@@ -199,7 +196,7 @@ section {
 }
 
 #bg-scroll-eye {
-    @include bg-scroll('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg', 650px);
+    @include bg-scroll($bg-img-eye, center, 100%, 510px);
 }
 
 #tools-effects {
@@ -234,10 +231,7 @@ section {
 
 #services {
     padding: ($top-spacing*3)/2 0 ($bottom-spacing*7)/3 0;
-    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg');
-    background-position-x: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bg-img($bg-img-services, 50%);
     color: $brand-secondary;
     text-align: center;
 

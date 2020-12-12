@@ -435,9 +435,9 @@ header nav.top {
 
 #download-buy {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
-  background-repeat: no-repeat;
+  background-position: 50% 0%;
   background-size: cover;
-  background-position-x: 50%;
+  background-repeat: no-repeat;
 }
 #download-buy .container {
   display: flex;
@@ -692,9 +692,9 @@ section p {
 
 #start-guide {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg");
-  background-position-x: 50%;
-  background-repeat: no-repeat;
+  background-position: 50% 0%;
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   color: white;
   padding-bottom: 0;
@@ -836,11 +836,11 @@ section p {
 
 #bg-scroll-street {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
-  min-height: 650px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center 100%;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 510px;
 }
 
 #painting-tools {
@@ -875,11 +875,11 @@ section p {
 
 #bg-scroll-eye {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
-  min-height: 650px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center 100%;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 510px;
 }
 
 #tools-effects {
@@ -916,9 +916,9 @@ section p {
 #services {
   padding: 120px 0 140px 0;
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
-  background-position-x: 50%;
-  background-repeat: no-repeat;
+  background-position: 50% 0%;
   background-size: cover;
+  background-repeat: no-repeat;
   color: #333333;
   text-align: center;
 }

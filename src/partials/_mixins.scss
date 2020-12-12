@@ -11,17 +11,6 @@
     align-items: $align-items;
 }
 
-@mixin bg-scroll($url, $height) {
-  background-image: url($url);
-
-  min-height: $height;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 @mixin pos-absolute-top-left($top:0, $left:0, $translateX:0%, $translateY:0%) {
     position: absolute;
     top: $top;
@@ -41,4 +30,17 @@
     bottom: $bottom;
     left: $left;
     transform: translate($translateX, $translateY);
+}
+
+@mixin bg-img($url, $posX:0%, $posY:0%, $size:cover, $repeat:no-repeat) {
+    background-image: url($url);
+    background-position: $posX $posY;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+@mixin bg-scroll($url, $posX:0%, $posY:0%, $height:inherit) {
+    @include bg-img($url, $posX, $posY);
+    background-attachment: fixed;
+    min-height: $height;
 }
