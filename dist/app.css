@@ -899,3 +899,33 @@ section p {
   left: 50%;
   transform: translateX(-50%);
 }
+
+#services {
+  padding: 120px 0 140px 0;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333333;
+  text-align: center;
+}
+#services .container-services {
+  display: flex;
+  flex-direction: "";
+  justify-content: space-between;
+  align-items: "";
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#services .container-services .service {
+  flex-basis: calc(40%);
+  padding: 60px 40px 80px 40px;
+  background-color: white;
+}
+#services .container-services .service a {
+  color: #009cff;
+}
+#services .container-services .service a:hover {
+  text-decoration: underline;
+}

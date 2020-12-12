@@ -232,3 +232,34 @@ section {
         }
     }
 }
+
+#services {
+    padding: ($top-spacing*3)/2 0 ($bottom-spacing*7)/3 0;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg');
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $brand-secondary;
+    text-align: center;
+
+    .container-services {
+        @include flex('', space-between, '');
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .service {
+            flex-basis: calc(40%);
+            padding: $bottom-spacing $top-spacing/2 $top-spacing $top-spacing/2;
+            background-color: $brand-primary;
+
+            a {
+                color: rgb(0, 156, 255);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
