@@ -199,3 +199,36 @@ section {
 #bg-scroll-eye {
     @include bg-scroll('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg', 650px);
 }
+
+#tools-effects {
+    color: $brand-secondary;
+
+    .container-cards {
+        @include flex('', space-evenly, '');
+
+        .card {
+            position: relative;
+            flex-basis: calc((100% - 5*36px) / 5);
+            margin: 50px 0;
+            color: $brand-primary;
+            overflow: hidden;
+
+            &:hover img {
+                transform: scale(1.1);
+                transition: all 0.8s;
+            }
+
+            img {
+                max-width: 100%;
+                transition: all 0s;
+            }
+
+            h3 {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
